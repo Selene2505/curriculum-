@@ -5,6 +5,9 @@
 <title>Selene De Año Waldner CV</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
+
+<!-- buenos avances, todavía hay mucho en lo que trabajar, principalmente hay que ajustar el indentado en todo el documento porque no se termina de entender cuál etiqueta contiene a cuál -->
+	
 <body>
 <header>
 	<nav class="botonera">
@@ -19,8 +22,8 @@
 	<section>
 		<h1>Selene De Año Waldner CV</h1>
       <h2>Diseñador e Ilustrador</h2>
-		<br>
-		<img src="imagen/Cv_tp1.jpg" width="123" height="157" alt="Foto de Selene De Año ">
+		<br> <!-- no se utilizan br!! -->
+		<img src="imagen/Cv_tp1.jpg" width="123" height="157" alt="Foto de Selene De Año "> <!-- la imagen no te carga porque el nombre está mal, en la carpeta de imagenes el archivo se llama "jpg_cv_tp1.jpg" y en el source lo pusiste como "Cv_tp1.jpg" etonces no encuentra el archivo. También te falta la unidad de medida --> 
 		<br>
 		
 		<h2>Sobre mí</h2>
@@ -35,7 +38,20 @@
 		<br>
 		  <h4>Reinventa Holding - Pasantía</h4>
 <p>Empresa de Startups, aceleradora y consultoría a Pymes. Ciudad de México. | Agosto 2022 - Diciembre 2022</p>
-			<ul>
+			<ul> <!-- en lugar de hacer varias ul con dos <li> sería más eficiente hacer una sola <ul> y que cada <li> tenga varias <p>, si el caso lo amerita, por ejemplo:
+				
+				<ul>
+					<li>
+						<h4>Reinventa Holding - Pasantía</h4>
+						<p>Diseño de piezas graficas para publicaciones, ediciónde videos y creación de paginas web en Kajabi.</p>
+						<p>Community manager</p>
+					</li>
+					<li>
+						<h4>Aflor da piel</h4>
+						<p>Diseño de piezas graficas para publicaciones,edición de videos.</p>
+					</li>
+				</ul>
+				y así con el resto de los items-->
 				<li>Diseño de piezas graficas para publicaciones, ediciónde videos y creación de paginas web en Kajabi.</li>
 				<li>Community manager</li>
 			</ul>
@@ -74,7 +90,7 @@
 			<address><h3>Contacto</h3>
 			<ul>
 				<li>(54) 1135818236</li>
-				<a><li>selenedaw921@gmail.com</li></a>
+				<a><li>selenedaw921@gmail.com</li></a> <!-- primero va el <li> por fuera, y por dentro la <a>, al revés de lo que planteaste -->
 				<a><li>https://www.behance.net/seledesigns/insights</li></a>
 				<li>Provincia de Buenos Aires Avellaneda</li>
 			</ul>
