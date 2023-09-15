@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+nav ul {
+	list-style: none;
+}
+body {
+	padding: 20px 300px 0px 300px;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,193,1) 36%, rgba(72,0,255,1) 100%);
+	background-size: 300% 300%;}
+
+header, main, footer {
+	background-color:azure;
+	align-content:stretch;
+}
+
+main {
+	width: 100%;
+}
+footer {
+	width: 100%;
+	height: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	background-color:azure;
+}
+
+
+/*Botonera*/
+
+.botonera{
+	width: 100%;
+	height: 100px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonera a{
+	padding: 10px 20px;
+	color:#4522c3;
+	font-family: "Bitter", 'sans-serif';
+	font-size: 20px;
+	text-decoration: none;
+	}
+.botonera a:hover {
+	color:azure;
+	background-color:#4522c3;
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 50px 0px 0px 0px;
+}
+.columnaB-container {
+	max-width: 45%;
+	display: flex;
+}
+.columnaC-container {
+	display: flex;
+}
+
+/*Sobre Mi*/
+
+h1 {
+	font-family: "Bitter", 'sans-serif';
+	color: #1F0A3F;
+	font-size: 40px;
+	margin-bottom: 0px;}
+img {
+  width: 30%;
+  height: 30%;
+  margin-left:50px;
+	margin-top:50px;
+	border-radius: 10%;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+.columnaA-container{
+	display: flex;
+	flex-direction:row;
+	}
+.sobremi{
+	padding-right: 40px;
+	 align-self: center;
+	padding-left: 22px;
+}
+.diseñador{
+	color:#4522c3;
+	font-style: italic; 
+}
+.sobremia{
+	font-family: "Bitter", 'sans-serif';
+	color: #4522c3;
+	font-size: 25px;
+	margin-top: 40px;
+}
+
+/* Experiencia Laboral*/
+
+.columnaB-container{
+	display:flex;
+	flex-direction: column;
+}
+.experiencia1{
+	margin-left: 40px;
+	margin-bottom: 20px;
+	
+}
+.experiencia2{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.experiencia3{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+/* Datos Academicos*/
+
+.columnaC-container{
+	display:flex;
+	flex-direction:row;
+	
+}
+.estudios{
+	margin-left: 40px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+
+/*Galeria*/
+
+.Portafolio{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	
+}
+.container-portafolio{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.gallery{
+	flex: 1 0 24rem;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	transform: scale(1.15);
+}
+
+.gallery-image {
+	display: block;
+	width: 30%;
+	height: 30%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/* La galeria de imagenes queira ponerla en dos columnas, gallery-itemA y gallery-itemB arriba, gallery-itemC y gallery-itemD abajo pero no logre dar con el error. Probe varias cosas de internet, tambie pedi ayuda de mis compañeros pero no se pudo solucionar*/
+
+.gallery-itemA{
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.gallery-itemB{
+	align-self: flex-end;
+	box-sizing: border-box;
+}
+
+.gallery-itemC{
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.gallery-itemD{
+	align-self: flex-end;
+	box-sizing: border-box;
+}
+
+
+.titulo{
+	margin-left: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+/*Texto*/
+
+h2 {
+	font-family: "Bitter", 'sans-serif';
+	font-size: 22px;
+	margin-bottom: 0px;
+}
+h3 {
+	font-family: "Bitter", 'sans-serif';
+	color:#4522c3;
+	font-size: 30px; 
+	align-self:flex-start;
+	margin-top: 60px;
+	margin-bottom: 15px;
+	margin-left: 40PX;
+}
+h4 {
+	font-family: "Bitter", 'sans-serif';
+	color:#1F0A3F;
+	font-size: 20px; 
+}
+h5 {
+	font-family: "Bitter", 'sans-serif';
+	color:#4522c3;
+	font-size: 30px; 
+	align-self:flex-start;
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+p {
+	font-family:Poppins, 'sans-sreif';
+	color:black;
+	font-size: 15px; 
+}
+ul{
+	font-family:Poppins, 'sans-sreif';
+	color:black;
+	font-size: 15px;
+}
+
+.creditos{
+	font-size: 12px;
+}
+
+/* Tipografias*/
+
+@font-face {
+	font-family: "Bitter";
+	src: url("Font/Bitter-Medium.ttf") format('trutype');
+	font-weight: normal;
+	font-style: medium;}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-SemiBold.ttf") format('trutype');
+	font-weight: normal;
+	font-style: semibold; 	
+}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-Medium.ttf") format('trutype');
+	font-weight: normal;
+	font-style: medium;
+}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-Medium.ttf") format('trutype');
+	font-weight: normal;
+	font-style: medium;}
+@font-face {
+	font-family: "Bitter";
+	src: url("Font/Bitter-Medium.ttf") format('trutype');
+	font-weight: normal;
+	font-style: medium; 
+}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-SemiBold.ttf") format('trutype');
+	font-weight: normal;
+	font-style: semibold; 	
+}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-Medium.ttf") format('trutype');
+
+	font-weight: normal;
+	font-style: medium;
+}
+@font-face {
+	font-display: "Bitter";
+	src:url("Font/Bitter-Medium.ttf") format('trutype');
+	font-weight: normal;
+	font-style: medium;
+}
