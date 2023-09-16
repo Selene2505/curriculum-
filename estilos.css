@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* fijate en la carpeta de imágenes que borraste una de las imágenes de la galería */
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -10,12 +12,12 @@ nav ul {
 	list-style: none;
 }
 body {
-	padding: 20px 300px 0px 300px;
+	padding: 20px 300px 0px 300px; /* si el padding es mayor a 100 es muy grande, hay algo que está haciendo ruido, si necesitás que las cosas de adentro tengan un límite establecé en header main y footer la propiedad de max-width para que no crezcan más que eso*/
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 	background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,193,1) 36%, rgba(72,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,193,1) 36%, rgba(72,0,255,1) 100%); /* indentado */
 	background-size: 300% 300%;}
 
 header, main, footer {
@@ -43,8 +45,8 @@ footer {
 	width: 100%;
 	height: 100px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* indentado */
+    justify-content: center; /* indentado */
 }
 .botonera a{
 	padding: 10px 20px;
@@ -80,9 +82,9 @@ h1 {
 	font-size: 40px;
 	margin-bottom: 0px;}
 img {
-  width: 30%;
-  height: 30%;
-  margin-left:50px;
+  width: 30%; /* indentado */
+  height: 30%; /* indentado */
+  margin-left:50px; /* indentado */
 	margin-top:50px;
 	border-radius: 10%;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -135,7 +137,7 @@ img {
 	
 }
 .estudios{
-	margin-left: 40px;
+	margin-left: 40px; /* poné los margins en una sola línea */
 	margin-right: 100px;
 	margin-bottom: 20px;
 }
@@ -153,8 +155,8 @@ img {
 	margin-left: 40px;
 	margin-bottom: 20px;
 }
-.gallery{
-	flex: 1 0 24rem;
+.gallery{ /*acá falta un display flex y va a empezar a funcionar bien la galería ;)  */
+	flex: 1 0 24rem; /* probeblemente tengas que borrar esto para que no se deformen */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
@@ -211,7 +213,7 @@ h2 {
 	margin-bottom: 0px;
 }
 h3 {
-	font-family: "Bitter", 'sans-serif';
+	font-family: "Bitter", 'sans-serif'; /*veo que estás estableciendo mucho la misma font-family en lugares puntuales, usá economía de recursos */
 	color:#4522c3;
 	font-size: 30px; 
 	align-self:flex-start;
@@ -247,7 +249,7 @@ ul{
 	font-size: 12px;
 }
 
-/* Tipografias*/
+/* Tipografias*/ /*las tipografías no están funcionando, de todos modos estas son todas fuentes de google así que podrías intentar usar el @import a ver si ahora funcionan, también es conveniente dejar las fuentes al comienzo del documento para que queden especificadas ahí, también veo que usaste poppins, deberías importarlas también. Usando el parametro @import no hace falta que esté la carpeta de fuentes porque las trae directo de google*/
 
 @font-face {
 	font-family: "Bitter";
