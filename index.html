@@ -6,34 +6,34 @@
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header>
+<header> <!-- todo lo que está dentro del body necesita tener un tab más, sino se lee como si body estuviese al mismo nivel que header y footer-->
 	<nav class="botonera">
-		<div> </div>
+		<div> </div> <!-- no dejes etiquetas sueltas!! -->
 		<ul>
-			<il><a>Acerca de mi</a></il>
+			<il><a>Acerca de mi</a></il> <!-- las etiquetas <a> necesitan un href, si vas a dejarlas vacías podés ponerle # para indicar que todavía no se hizo el link, también está mal escrita la etiqueta de list item!! -->
 			<il><a>Portafolio</a></il>
 			<il><a href="https://www.instagram.com/sele_designs/?hl=es-la" target="_blank">Instagram</a></il>
 			<il><a href="https://www.behance.net/seledesigns" target="_blank">Behance</a></il>
 			<il><a>Contacto</a></il>
 		</ul>
 	</nav>
-	<section class="columnaA-container">
+	<section class="columnaA-container"> <!-- tanto en header como footer no se usan sections ni articles -->
 		<img src="imagen/Cv_tp1.jpg" width="123px" height="157px" alt="Foto de Selene De Año" >
 		<div class="sobremi" id="Acerca de mi">
-			<h1>Selene De Año Waldner</h1>
-      		<h2 class="diseñador">Diseñador e Ilustrador</h2>
+			<h1>Selene De Año Waldner</h1> 
+      		<h2 class="diseñador">Diseñador e Ilustrador</h2> <!-- indentado -->
 			<h2 class="sobremia">Sobre mi</h2>
 			<p>Soy una persona proactiva, organizada y con una gran motivación. Tengo grandes conocimientos en diseño gráfico, fotografía, atención al cliente.</p>
 		</div>
 	</section>
 </header>
 	<main> 
-		<section class="container">
-		<section class="columnaB-container">
-			<article>
+		<section class="container"> <!-- indentado interno -->
+		<section class="columnaB-container"> <!-- una section no puede tener otra section por dentro, si necesitas dividir hay una más específica -->
+			<article> <!-- indentado interno -->
 			<h3>Experiencia Laboral</h3>
 			<div class="experiencia1">
-				<ul>
+				<ul> <!-- una ul con un solo list item?? queda mejor hacer que cada li tenga la class que le estás poniendo a cada div-->
 				<il>
 					<h4>Reinventa Holding - Pasantía</h4>
 					<p>Empresa de Startups, aceleradora y consultoría a Pymes. Ciudad de México. | Agosto 2022 - Diciembre 2022</p>
@@ -63,7 +63,7 @@
 			</article>
 		</section>
 		<section class="columnaC-container">
-			<div class="estudios">
+			<div class="estudios"> <!-- este div no está haciendo nada, se justificaría si tuvieses dos divs distintos adentro -->
 				<h5>Datos Académicos</h5>
 				<h4>Lic. Diseño y Comunicación Visual</h4>
 				<p>Universidad Nacional de Lanús | 2017 - Actualidad</p>
@@ -72,10 +72,10 @@
 			</div>
 		</section>
 		</section>
-		<section class="Portafolio" id="Portafolio">
-		<article class="container-portafolio">
+		<section class="Portafolio" id="Portafolio"> <!-- indentado interno, esta parte me cuesta corregirla porque no entiendo qué contiene a quién, pero sí puedo darme cuenta que hay muchas etiquetas de más, acá lo único que debería haber es un título y una etiqueta que contenga tus tres divs de galería, y también le hace falta flex al contenedor padre, que si no me equivoco es gallery -->
+		<article class="container-portafolio"> 
 			<h5 class="heading">Portafolio</h5>
-		<seccion class="gallery">
+		<seccion class="gallery"> <!-- no pueden haber sections dentro de otra section -->
 			<div class="gallery-itemA">
 				<img class="gallery-image" src="imagen/De Año_Osore_Tp5.jpg" width="123px" height="157px" alt="Trabajo1" >
 				<h4 class="titulo">Especimen Tipografico Experimental</h4>
