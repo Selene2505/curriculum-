@@ -4,30 +4,35 @@
 <meta charset="utf-8">
 <title>Selene De Año Waldner</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="imagen/fav_icon.svg" alt="logo">
 </head>
 <body>
 	<header>
-		<nav class="botonera">
-			<ul class="itembotonera">
-				<li><a href="#Acerca de mi" target="_self">Acerca de mi</a></li>
-				<li><a href="#Portafolio" target="_self">Portafolio</a></li>
-				<li><a href="https://www.instagram.com/sele_designs/?hl=es-la" target="_blank">Instagram</a></li>
-				<li><a href="https://www.behance.net/seledesigns" target="_blank">Behance</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-		<div class="columnaA-container">
-			<img src="imagen/Cv_tp1.jpg" width="123px" height="157px" alt="Foto de Selene De Año" >
-			<div class="sobremi" id="Acerca de mi">
-				<h1>Selene De Año Waldner</h1> 
-				<h2 class="diseñador">Diseñador e Ilustrador</h2>
-				<h2 class="sobremia">Sobre mi</h2>
-				<p>Diseñadora Freelance, estudiante de diseño gráfico y apasiona por la fotografía, me gusta aprender nuevos temas, hobbies y formas de trabajar para avanzar profesionalmente. Soy una persona proactiva, organizada y con una gran motivación.
-				Mi principal objetivo es seguir capacitándome y desarrollándome en el campo profesional del diseño, adquiriendo así valiosas experiencias.Soy una persona proactiva, organizada y con una gran motivación. Tengo grandes conocimientos en diseño gráfico, fotografía e ilustración.</p>
-			</div>
-		</div>
+			<nav class="botonera">
+				<div class="logo">
+					<a href="index.html"><img src="imagen/logo.png" width="88px" height="60px" alt="logo"/></a>
+				</div>
+				<ul class="itembotonera">
+					<li><a href="#Acerca de mi" target="_self">Acerca de mi</a></li>
+					<li><a href="#Portafolio" target="_self">Portafolio</a></li>
+					<li><a href="https://www.instagram.com/sele_designs/?hl=es-la" target="_blank">Instagram</a></li>
+					<li><a href="https://www.behance.net/seledesigns" target="_blank">Behance</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
 	</header>
 		<main> 
+			<h1 class="nombre"><div class="sele">SD</div> / Sele_Design  ✺ /</h1>
+			<section class="presentacion">
+					<img class="foto-de-perfil" src="imagen/Cv_tp1.jpg" width="123px" height="157px" alt="Foto de Selene De Año"/>
+				<div class="sobremi" id="Acerca de mi">
+					<h1>Selene De Año Waldner</h1> 
+					<h2 class="diseñador">Diseñadora e Ilustradora</h2>
+					<h2 class="sobremia">Sobre mi</h2>
+					<p>Diseñadora Freelance, estudiante de diseño gráfico y apasiona por la fotografía, me gusta aprender nuevos temas, hobbies y formas de trabajar para avanzar profesionalmente. Soy una persona proactiva, organizada y con una gran motivación.
+					Mi principal objetivo es seguir capacitándome y desarrollándome en el campo profesional del diseño, adquiriendo así valiosas experiencias.Soy una persona proactiva, organizada y con una gran motivación. Tengo grandes conocimientos en diseño gráfico, fotografía e ilustración.</p>
+				</div>
+			</section>
 			<section class="container">
 				<div class="columnaB-container">
 					<article>
@@ -58,28 +63,63 @@
 						<h4>Bachillerato de Economía</h4>
 						<p>Instituto María Auxiliadora| 2016</p>
 					</article>
+					<article class="programas"><!-- No se porque no logro alinear la lista con el flex-->
+						<h3>Programas</h3>
+							<ul>
+								<li>Adobe Illustrator</li>
+								<li>Adobe Photoshop</li>
+								<li>Adobe InDesign</li>
+								<li>Adobe Lightroom</li>
+								<li>Figma</li>
+							</ul>
+					</article>
 				</div>
 			</section>
-		<section class="Portafolio" id="Portafolio">
+		<!--<section class="Portafolio" id="Portafolio"> ¡OCULTE LA GALERIA PORQUE LA TENGO QUE CAMBIAR!
 				<h3 class="titulo">Portafolio</h3>
-			<article class="gallery">
+			<article class="gallery">  
 				<div class="gallery-itemA">
-					<img class="gallery-image" src="imagen/osore.jpg" width="992px" height="1417px" alt="Trabajo1">
+					<a href="#"><img class="gallery-image" src="imagen/osore.jpg" width="992px" height="1417px" alt="Trabajo1"/></a>
 					<h5 class="titulo">Espécimen tipográfico experimental</h5>
 				</div>
 				<div class="gallery-itemB">
-					<img class="gallery-image" src="imagen/tomie.jpg" width="1002px" height="1417px" alt="Trabajo4">
+					<a href="#"><img class="gallery-image" src="imagen/tomie.jpg" width="1002px" height="1417px" alt="Trabajo4"/></a>
 					<h5 class="titulo">Afiche experimental Tomie</h5>
 				</div>
 				<div class="gallery-itemC">
-					<img class="gallery-image" src="imagen/urge.jpg" width="992px" height="1417px" alt="Trabajo2">
+					<a href="#"><img class="gallery-image" src="imagen/urge.jpg" width="992px" height="1417px" alt="Trabajo2"/></a>
 					<h5 class="titulo">Afiche Urge contra la megaminería</h5>
 				</div>
 				<div class="gallery-itemD">
-					<img class="gallery-image" src="imagen/campaña.jpg" width="1012px" height="1417px" alt="Trabajo3">
+					<a href="#"><img class="gallery-image" src="imagen/campaña.jpg" width="1012px" height="1417px" alt="Trabajo3"></a>
 					<h5 class="titulo">Campaña Menstruar tiene un costo</h5>
 				</div>
+				<div>
+					<a href="#"><img class="gallery-image" src="imagen/maneskin.jpg" width="992px" height="992" alt="Trabajo5"/></a>
+					<h5 class="titulo">Maneskin</h5>
+				</div>
+				<div>
+					<a href="#"><img class="gallery-image" src="imagen/ilustracion.jpg" width="992" height="992" alt="Trabajo6"/></a>
+					<h5>Ilustraciones</h5>
+				</div>
+				<div>
+					<a href="#"><img class="gallery-image" src="imagen/portadas.jpg" width="1002" height="716" alt="Trabajo7"/></a>
+					<h5>Portadas de libros</h5>
+				</div>
+				<div>
+					<a href="#"><img class="gallery-image" src="imagen/fotografia.jpg" width="1002" height="668" alt="Trabajo8"/></a>
+					<h5>Trabajos de fotografia</h5>
+				</div>
 			</article>
+		</section>-->
+		<section class="video">
+			<div class="contenido-video">
+				<video src="video/video.mp4" controls width="360px" height="360px"></video>
+			</div>
+			<div class="contenido-info">
+				<h4>Video experimental</h4>
+				<p>Las composiciones musicales experimentales utilizadas para la generación del tp1 Audiografía son en este tp las bandas sonoras sobre las que se generaron los videos. Los mismos utilizan cómo recursos expresivos fragmentos de las audiografías, fotos fijas, videos etc. Lo planteado en la concepción de este tp persigue un carácter de edición netamente experimental y trabajando particularmente con el concepto de Letra en Movimiento.</p>
+			</div>
 		</section>
 	</main>
 <footer>

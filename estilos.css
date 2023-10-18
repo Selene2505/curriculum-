@@ -1,8 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
 *{
 	margin: 0px;
@@ -13,7 +12,7 @@ nav ul {
 	list-style: none;
 }
 body {
-	padding: 20px 100px 0px 100px;
+	padding: 20px 100px 0px 170px;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
@@ -38,7 +37,7 @@ body {
 header, main, footer {
 	background-color:azure;
 	align-content:stretch;
-  	max-width: 80%;
+	max-width: 85%;
 }
 
 main {
@@ -54,15 +53,41 @@ footer {
 	background-color:azure;
 }
 
+/*INICIO*/
+
+.nombre{
+	font-size: 80px;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-left: 0px;
+	padding: 100px;
+	background-color: #4522c3;
+	color: azure;
+	text-align: center;
+	}
+.nombre:hover{ 
+	color: #4522c3;
+	background-color: azure;
+	text-transform: lowercase;
+	font-family:'Poppins', sans-serif;
+	font-size: 70px;
+	height: 252px; 
+}
+.nombre .sele{
+	display: inline;
+	font-weight: 700;
+}
+
+
 
 /*Botonera*/
 
 .botonera{
-	width: 100%;
+	width: 1390px;
 	height: 100px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	background-color:#09054F;
 }
 
@@ -74,15 +99,30 @@ footer {
 .botonera a{
 	padding: 10px 20px;
 	color:azure;
-	font-family: "Bitter", 'sans-serif';
-	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
 	text-decoration: none;
+	font-weight: 400;
+	margin-right: 30px;
 	}
 
 .botonera a:hover {
-	color:#4522c3;
+	color:#09054F;
 	background-color:azure;
 	text-decoration: none;
+}
+
+.logo{
+	display:flex;
+	margin-left: 30px;
+} 
+
+/* SOBRE MI*/
+
+.presentacion{
+	display: flex;
+	flex-direction: row;
+
 }
 
 
@@ -90,8 +130,10 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin: 50px 0px 0px 0px;
+	align-content:space-around;
 }
+
+
 .columnaB-container {
 	max-width: 45%;
 	display: flex;
@@ -103,17 +145,17 @@ footer {
 /*Sobre Mi*/
 
 h1 {
-	font-family: 'Bitter', serif;
+	font-family: 'Poppins', sans-serif;
 	color: #1F0A3F;
-	font-size: 40px;
+	font-size: 34px;
 	margin-bottom: 0px;
 	font-weight: 600;
 }
 
-img {
+.foto-de-perfil{
 	width: 25%; 
 	height: 25%; 
-	margin-left:50px; 
+	margin-left:109px; 
 	margin-top:50px;
 	border-radius: 10%;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -121,7 +163,9 @@ img {
 .columnaA-container{
 	display: flex;
 	flex-direction:row;
+	padding-left:7%;
 	}
+
 .sobremi{
 	padding-right: 15%;
 	 align-self: center;
@@ -130,20 +174,23 @@ img {
 }
 .diseñador{
 	color:#4522c3;
-	font-style: italic; 
+	font-style: italic;
+	font-size: 25px;
+	font-weight: 400;
 }
 .sobremia{
-	font-family: "Bitter", 'sans-serif';
+	font-family: 'Poppins', sans-serif;
 	color: #4522c3;
 	font-size: 25px;
 	margin-top: 40px;
+	font-weight: 500;
 }
 
 /* Experiencia Laboral*/
 
 .columnaB-container{
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 .experiencia1{
 	margin-left: 40px;
@@ -163,27 +210,32 @@ img {
 
 .columnaC-container{
 	display:flex;
-	flex-direction:row;	
+	flex-direction:column;
 }
 .estudios{
 	margin: 0PX 100PX 20PX 40PX;
 }
 
+/*Programas*/
+
 /*Galeria*/
+
 
 .Portafolio{
 	display:inline-grid;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
+	
 }
 
 .titulo{
-	margin: 10PX 0PX 20PX 20PX
+	margin: 30PX 50PX 0PX 20PX
+	
 }
 
-.Portafolio{
-	margin-left: 3%;
+/*.Portafolio{
+	margin-left: 7%;
 	margin-bottom: 10%;
 	margin-right: 10%;
 }
@@ -191,26 +243,78 @@ img {
 .gallery{ 
 	display:flex;
 	align-items: baseline;
+	flex-wrap: wrap;
+
 }
 
 .gallery-image {
-	width: 85%;
-	height: 85%;
+	width: 30%;
+	height: 30%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 	margin-left: 6%;
 	margin-top: 5%;
-	
-}
+	}
 
 .gallery-image:hover {
 	transform: scale(1.15);
+}*/
+
+/*VIDEO*/
+
+.video{
+	display: flex;
+	margin-top: 60px;
+	padding: 30px 20px 0px 80px;
+	align-items: center;
+	gap: 15px;
+	align-self: stretch;
+	background-color:#050470;
+
 }
+
+.contenido-video{
+	display: flex;
+	padding: 25px 10px ;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.contenido-video video{
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	border: 2px;
+}
+
+.contenido-info {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 80px 0px 0px;
+	gap: 30px 10px;
+}
+.contenido-info h4{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color:azure;
+	font-size: 30px;
+	
+}
+
+.contenido-info p{
+	display: flex;
+	padding-right: 3px;
+	align-items: flex-start;
+	gap: 10px;
+	color: azure;
+}
+
 
 /*Texto*/
 
 h2, h3, h4{
-	font-family: 'Bitter', serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 p, ul, h5{
@@ -259,3 +363,75 @@ ul{
 .creditos{
 	font-size: 12px;
 }
+
+/*Formulario*/
+
+.contacto{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding-bottom: 15%;
+	padding-top: 5%;
+	padding-left: 10%;
+}
+
+.formulario form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+	padding-top: 2%;
+	font-family: Poppins;
+}
+
+textarea{
+	display:flex;
+	margin-top: 10px;
+	height: 100px;
+	width: 32%;
+	padding: 5px;
+	font-family: Poppins;
+}
+
+input[type=text], input[type=email]{
+	display:flex;
+	background-color: #ccc;
+	padding: 5px;
+	margin: 10px 0 5px 0px;
+	font-family: Poppins;
+	font-size: 16px;
+	width: 400px;
+}
+
+input[type=submit]{
+	background-color: #4522c3;
+	color:#f5f5f5;
+	font-family: Poppins;
+	font-size: 16px;
+	width: 20%;
+	gap: 5px;}
+
+.contacto-2{
+	font-size: 50px;
+	font-weight: 70;
+	text-transform: uppercase;
+	margin-left: 0px;
+	padding: 100px;
+	background-color: #09054F;
+	color: azure;
+	text-align: center;
+	}
+.contacto-2:hover{ 
+	color: #09054F;
+	background-color: azure;
+	text-transform: lowercase;
+	font-family:'Poppins', sans-serif;
+	font-size: 70px;
+	height: 252px; 
+}
+.contacto-2 .form{
+	display: inline;
+	font-weight: 700;
+}
+
+
