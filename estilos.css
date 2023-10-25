@@ -12,7 +12,7 @@ nav ul {
 	list-style: none;
 }
 body {
-	padding: 20px 100px 0px 170px;
+	padding: 0px 100px 0px 100px;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
@@ -23,21 +23,22 @@ body {
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%; 
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+	0% {
+		background-position: 0% 50%; 
+}
+	50% {
+		background-position: 100% 50%;
+}
+	100% {
+		background-position: 0% 50%;
+}
 }
 
 header, main, footer {
 	background-color:azure;
 	align-content:stretch;
-	max-width: 85%;
+	max-width: 1500px;
+	width: 100%;
 }
 
 main {
@@ -61,10 +62,11 @@ footer {
 	text-transform: uppercase;
 	margin-left: 0px;
 	padding: 100px;
-	background-color: #4522c3;
+	background-color: #0F1696;
 	color: azure;
 	text-align: center;
 	}
+
 .nombre:hover{ 
 	color: #09054F;
 	background-color: azure;
@@ -129,13 +131,12 @@ footer {
 .container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	align-content:space-around;
+	justify-content: space-around;
 }
 
 
 .columnaB-container {
-	max-width: 45%;
+	max-width: 32%;
 	display: flex;
 }
 .columnaC-container {
@@ -225,50 +226,144 @@ h1 {
 	
 }
 
-/*.Portafolio{
+.Portafolio{
 	margin-left: 7%;
-	margin-bottom: 10%;
-	margin-right: 10%;
+	margin-right: 7%;
 }
 
 .gallery{ 
 	display:flex;
+	flex-direction: row;
 	align-items: baseline;
-	flex-wrap: wrap;
-
 }
 
+
 .gallery-image {
-	width: 30%;
-	height: 30%;
+	width: 80%;
+	height: 80%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 	margin-left: 6%;
-	margin-top: 5%;
+	margin-top: 6%;
+	border-radius: 10%;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	}
 
 .gallery-image:hover {
 	transform: scale(1.15);
-}*/
+}
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#foto-1 {
+	background-image: url("imagen/osore.jpg");
+}
+
+#foto-2 {
+	background-image: url("imagen/tomie.jpg");
+}
+
+#foto-3 {
+	background-image:url("imagen/urge.jpg");
+}
+#foto-4 {
+	background-image:url("imagen/campaña.jpg");
+}
+
+#fondo-galeria {
+	background-color: black;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+}
+
+/*CARRUSEL*/
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	margin: 15%;
+	gap: 32%;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor img {
+	position: absolute;
+	left: 45;
+	right: 45;
+	bottom: 20;
+	transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+	opacity: 0;
+}
+
 
 /*VIDEO*/
 
 .video{
 	display: flex;
 	margin-top: 60px;
-	padding: 30px 20px 0px 80px;
+	padding: 30px 70px 30px 70px;
 	align-items: center;
 	gap: 80px;
 	align-self: stretch;
-	background-color:#050470;
+	background-image: url("imagen/fondo.jpg")
 
 }
 
 .contenido-video{
 	display: flex;
-	padding: 25px 10px ;
+	padding: 25px 25px ;
 	align-items: flex-start;
-	gap: 40px;
+	gap: 30px;
 }
 
 .contenido-video video{
@@ -281,14 +376,17 @@ h1 {
 .contenido-info {
 	display: flex;
 	flex-direction: column;
-	padding: 5px 80px 0px 0px;
+	padding: 20px 20px 20px 20px;
 	gap: 30px 10px;
+	background-color: azure;
+	border-radius: 20px;
+	
 }
 .contenido-info h4{
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	color:azure;
+	color:#000000;
 	font-size: 30px;
 	
 }
@@ -298,7 +396,7 @@ h1 {
 	padding-right: 3px;
 	align-items: flex-start;
 	gap: 10px;
-	color: azure;
+	color:#000000;
 }
 
 
@@ -401,7 +499,7 @@ input[type=submit]{
 	font-family: Poppins;
 	font-size: 16px;
 	width: 20%;
-	gap: 5px;}
+	align-self: center;}
 
 .contacto-2{
 	font-size: 50px;
@@ -432,3 +530,50 @@ input[type=submit]{
 	justify-content: flex-start;
 	
 }
+
+.contacto h4{
+	margin-bottom: 25px;
+}
+
+/*aside*/
+
+.redes-sociales{
+	width: 4%;
+	height: 4%;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 5%;
+	bottom: 50%;
+	gap:5%;
+}
+
+.redes-sociales i{
+	color: azure;
+	width: 80px;
+	height: 80px;
+}
+
+@media screen and (min-with: 600px){
+	
+	*{
+		margin: 0px;
+		padding:0px;}
+	
+	
+	.botonera{
+		padding: 20PX;
+	}
+	
+	.itembotonera a{
+		width: 20%;
+	}
+	
+	.presentacion{
+		direction: flex;
+		flex-direction: column;
+		
+	}
+}
+
+
