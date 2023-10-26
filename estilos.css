@@ -12,7 +12,7 @@ nav ul {
 	list-style: none;
 }
 body {
-	padding: 0px 100px 0px 100px;
+	
 	display: flex;
 	flex-direction:column;
 	align-items: center;
@@ -550,11 +550,10 @@ input[type=submit]{
 
 .redes-sociales i{
 	color: azure;
-	width: 80px;
-	height: 80px;
+	font-size: 25px;
 }
 
-@media screen and (min-with: 600px){
+@media screen and (min-with: 600px){ 
 	
 	*{
 		margin: 0px;
