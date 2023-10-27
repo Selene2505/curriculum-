@@ -7,19 +7,21 @@
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
+	cursor: url("imagen/cursor.png"), auto; 
 }
 nav ul {
 	list-style: none;
 }
 body {
-	
+	padding: 0px, 100px, 0px, 100px;
 	display: flex;
 	flex-direction:column;
-	align-items: center;
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,193,1) 36%, rgba(72,0,255,1) 100%); 
 	background-size: 300% 100%;
-	animation: gradient 15s ease infinite; 
+	animation: gradient 3s ease infinite;
+	
+	
 }
 
 @keyframes gradient {
@@ -37,7 +39,7 @@ body {
 header, main, footer {
 	background-color:azure;
 	align-content:stretch;
-	max-width: 1500px;
+	max-width: 1750px;
 	width: 100%;
 }
 
@@ -98,7 +100,7 @@ footer {
 	flex-direction: row;
 }
 
-.botonera a{
+.botonera li a{
 	padding: 10px 20px;
 	color:azure;
 	font-family: 'Poppins', sans-serif;
@@ -124,9 +126,17 @@ footer {
 .presentacion{
 	display: flex;
 	flex-direction: row;
-
+	padding-left: 5%;
 }
 
+.sobremi{
+	gap: 2%;
+}
+
+.sobremi p{
+	padding-right: 12%;
+	font-size: 18px;
+}
 
 .container {
 	display: flex;
@@ -142,6 +152,11 @@ footer {
 .columnaC-container {
 	display: flex;
 }
+
+.programas ul li{
+	font-size: 18px;
+}
+
 
 /*Sobre Mi*/
 
@@ -351,7 +366,7 @@ h1 {
 .video{
 	display: flex;
 	margin-top: 60px;
-	padding: 30px 70px 30px 70px;
+	padding: 30px 12% 30px 10%;
 	align-items: center;
 	gap: 80px;
 	align-self: stretch;
@@ -441,7 +456,7 @@ h5 {
 }
 p {
 	color:black;
-	font-size: 15px;
+	font-size: 18px;
 }
 ul{
 	color:black;
@@ -456,14 +471,24 @@ ul{
 
 .contacto{
 	display: flex;
+	flex-direction: column;
 	padding-bottom: 5%;
 	padding-top: 5%;
-	padding-left: 15%;
 	gap: 5%;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
+.contacto h4{
+	display: flex;
+    padding-right: 67px;
+}
+
+.form-img{
+	display: flex;
+	gap: 10%;
+	padding-top: 3px;
+	align-items: center;
+}
 
 .formulario form{
 	display: flex;
@@ -499,7 +524,9 @@ input[type=submit]{
 	font-family: Poppins;
 	font-size: 16px;
 	width: 20%;
-	align-self: center;}
+	align-self: center;
+	gap: 5%;
+}
 
 .contacto-2{
 	font-size: 50px;
@@ -543,9 +570,9 @@ input[type=submit]{
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	right: 5%;
+	right: 1%;
 	bottom: 50%;
-	gap:5%;
+	gap:50%;
 }
 
 .redes-sociales i{
@@ -553,26 +580,93 @@ input[type=submit]{
 	font-size: 25px;
 }
 
-@media screen and (min-with: 600px){ 
+/*RESPONSIVE EN EL HTML DE CONTACTO*/
+
+@media screen and (max-width: 600px) {
 	
-	*{
-		margin: 0px;
-		padding:0px;}
+	.botonera li a{
+		font-size: 10px;
 	
+	}
 	
 	.botonera{
-		padding: 20PX;
-	}
-	
-	.itembotonera a{
-		width: 20%;
-	}
-	
-	.presentacion{
-		direction: flex;
+		display: flex;
 		flex-direction: column;
-		
+		align-self: flex-end;
 	}
+	
+	.redes-sociales i{
+		font-size: 0px;
+	}
+	
+	.contacto{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	gap: 5%;
+	align-items: center;
 }
+
+.contacto h4{
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+}
+
+.form-img{
+	display: flex;
+	flex-direction: column;
+	flex-direction: column-reverse;
+	gap: 10%;
+	padding-top: 6px;
+	align-items: center;
+}
+
+.formulario form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+	padding-top: 10%;
+	font-family: Poppins;
+}
+
+
+.imag-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+}
+	
+	.contacto-2{
+	font-size: 40px;
+	font-weight: 70;
+	text-transform: uppercase;
+	margin-left: 0px;
+	padding: 100px;
+	background-color: #09054F;
+	color: azure;
+	text-align: center;
+	}
+.contacto-2:hover{ 
+	color: #09054F;
+	background-color: azure;
+	text-transform: lowercase;
+	font-family:'Poppins', sans-serif;
+	font-size: 40px;
+	padding: 85px; 
+}
+.contacto-2 .form{
+	display: inline;
+	font-weight: 700;
+}
+	
+}
+
+
+
+
 
 
