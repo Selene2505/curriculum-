@@ -13,7 +13,6 @@ nav ul {
 	list-style: none;
 }
 body {
-	padding: 0px, 100px, 0px, 100px;
 	display: flex;
 	flex-direction:column;
 	background: rgb(2,0,36);
@@ -336,14 +335,14 @@ h1 {
 	z-index: 0;
 }
 
-/*CARRUSEL*/
+/*DIBUJOS*/
 
 .contenedor {
 	display: flex;
 	flex-direction: row;
 	height: 100%;
 	margin: 15%;
-	gap: 32%;
+	gap: 30%;
 	align-items: center;
 	justify-content: center;
 }
@@ -584,17 +583,28 @@ input[type=submit]{
 
 @media screen and (max-width: 600px) {
 	
-	.botonera li a{
-		font-size: 10px;
+
 	
+	body {
+		display: flex;
+		flex-direction:column;}
+
+	.botonera li a{
+		font-size: 16px;
+		font-family: 'Poppins', sans-serif;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
 	}
 	
 	.botonera{
 		display: flex;
-		flex-direction: column;
-		align-self: flex-end;
+		align-content: center;
+		
 	}
-	
+	.logo{
+		margin-left: 5px}
+
 	.redes-sociales i{
 		font-size: 0px;
 	}
@@ -621,6 +631,8 @@ input[type=submit]{
 	gap: 10%;
 	padding-top: 6px;
 	align-items: center;
+	width: 15%;
+	height: 20%;
 }
 
 .formulario form{
@@ -645,11 +657,12 @@ input[type=submit]{
 	font-weight: 70;
 	text-transform: uppercase;
 	margin-left: 0px;
-	padding: 100px;
+	padding: 50px;
 	background-color: #09054F;
 	color: azure;
 	text-align: center;
 	}
+	
 .contacto-2:hover{ 
 	color: #09054F;
 	background-color: azure;
